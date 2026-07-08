@@ -1,0 +1,9 @@
+{
+  "id": "content-os",
+  "name": "Content OS ⚡",
+  "version": "2.6.2",
+  "minAppVersion": "1.4.0",
+  "description": "创作者的内容操作系统（CAPE 循环）：捕获→选题雷达→素材包→写作自检→排期发布→数据复盘→血统复利，附收件箱评审、系列面板、健康监控与 AI wiki 编译任务书。",
+  "author": "徐悦 & Claude",
+  "isDesktopOnly": false
+}
