@@ -1,0 +1,465 @@
+/* Content OS */
+
+.cos-dash { padding: 8px 10px; }
+.cos-title { font-size: 1.15em; font-weight: 700; margin: 4px 0 10px; }
+
+.cos-actions { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.cos-action {
+  flex: 1 1 40%;
+  padding: 6px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cos-section {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 10px;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  background: var(--background-secondary);
+}
+.cos-section-title {
+  font-size: 0.82em;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+  text-transform: none;
+}
+
+.cos-line { margin: 2px 0; }
+.cos-dim { color: var(--text-muted); font-size: 0.88em; }
+
+.cos-group { margin: 6px 0; }
+.cos-group-title { font-size: 0.85em; font-weight: 600; margin-bottom: 2px; }
+
+.cos-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 2px 4px;
+  border-radius: 5px;
+}
+.cos-item:hover { background: var(--background-modifier-hover); }
+.cos-item a { cursor: pointer; text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cos-next { cursor: pointer; color: var(--text-muted); padding: 0 4px; }
+.cos-next:hover { color: var(--text-accent); }
+.cos-tools { display: flex; gap: 2px; flex-shrink: 0; }
+
+.cos-warn { color: var(--text-error); }
+.cos-warn b { color: var(--text-error); }
+
+.cos-full { width: 100%; margin-top: 8px; }
+
+/* ---- 设置页品牌抬头 ---- */
+.cos-settings .cos-set-header { text-align: center; padding: 14px 0 6px; }
+.cos-set-brand { display: flex; align-items: center; justify-content: center; gap: 8px; }
+.cos-set-logo { font-size: 1.5em; }
+.cos-set-name { font-size: 1.45em; font-weight: 700; color: var(--interactive-accent); }
+.cos-set-ver {
+  font-size: 0.75em; color: var(--text-muted);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 10px; padding: 1px 8px;
+}
+.cos-set-ai { margin-left: 14px; font-weight: 600; cursor: pointer; color: var(--interactive-accent); }
+.cos-set-ai:hover { text-decoration: underline; }
+
+.cos-set-links { display: flex; justify-content: center; gap: 22px; margin: 14px 0 6px; }
+.cos-set-link { cursor: pointer; color: var(--interactive-accent); font-weight: 500; }
+.cos-set-link:hover { text-decoration: underline; }
+
+.cos-set-tabs {
+  display: flex; justify-content: center; gap: 28px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  margin: 14px 0 4px;
+}
+.cos-set-tab {
+  display: flex; align-items: center; gap: 5px;
+  padding: 8px 2px; cursor: pointer;
+  color: var(--text-normal); font-weight: 600;
+  border-bottom: 2.5px solid transparent;
+  margin-bottom: -1px;
+}
+.cos-set-tab:hover { color: var(--interactive-accent); }
+.cos-set-tab-active { color: var(--interactive-accent); border-bottom-color: var(--interactive-accent); }
+.cos-set-help {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 15px; height: 15px; border-radius: 50%;
+  border: 1.5px solid var(--text-muted); color: var(--text-muted);
+  font-size: 0.68em; font-weight: 700;
+}
+.cos-set-help:hover { border-color: var(--interactive-accent); color: var(--interactive-accent); }
+
+.cos-set-body { padding-top: 10px; }
+.cos-set-blurb { color: var(--text-muted); font-size: 0.9em; margin: 8px 0; line-height: 1.6; }
+.cos-set-pro {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 12px; padding: 14px 16px; margin-bottom: 12px;
+  background: var(--background-secondary);
+}
+.cos-set-pro-title { font-size: 1.1em; font-weight: 700; color: var(--interactive-accent); }
+
+/* ---- v1.0 新增 ---- */
+.cos-date { font-variant-numeric: tabular-nums; margin-right: 8px; color: var(--text-muted); flex-shrink: 0; }
+
+.cos-stat-row { display: flex; align-items: center; gap: 10px; margin: 6px 0; }
+.cos-stat-label { width: 3.5em; color: var(--text-muted); flex-shrink: 0; }
+.cos-stat-input { flex: 1; }
+
+.cos-preview {
+  max-height: 220px; overflow-y: auto;
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px; padding: 10px 12px;
+  font-size: 0.85em; white-space: pre-wrap; word-break: break-all;
+}
+
+.cos-check-row {
+  display: flex; align-items: flex-start; gap: 8px;
+  padding: 4px 2px; cursor: pointer; line-height: 1.45;
+}
+.cos-check-row:hover { background: var(--background-modifier-hover); border-radius: 5px; }
+.cos-check-row input { margin-top: 3px; flex-shrink: 0; }
+
+/* ---- 内容日历 ---- */
+.cos-cal-head { display: flex; align-items: center; justify-content: center; gap: 8px; margin: 4px 0 8px; }
+.cos-cal-title { font-weight: 700; min-width: 7.5em; text-align: center; }
+.cos-cal-nav { padding: 2px 10px; border-radius: 6px; cursor: pointer; }
+
+.cos-cal-grid {
+  display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px;
+  margin-bottom: 10px;
+}
+.cos-cal-wd { text-align: center; font-size: 0.75em; color: var(--text-muted); padding: 2px 0; }
+.cos-cal-cell {
+  min-height: 44px; border-radius: 7px; padding: 3px 4px;
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  cursor: pointer;
+}
+.cos-cal-cell:hover { border-color: var(--interactive-accent); }
+.cos-cal-out { opacity: 0.35; }
+.cos-cal-today { border-color: var(--interactive-accent); box-shadow: 0 0 0 1px var(--interactive-accent) inset; }
+.cos-cal-day { font-size: 0.78em; color: var(--text-muted); }
+.cos-cal-marks { font-size: 0.72em; line-height: 1.3; word-break: break-all; }
+.cos-cal-diary { color: var(--interactive-accent); font-weight: 900; font-size: 1.3em; line-height: 0.5; }
+
+/* ---- AI 对话面板 ---- */
+.cos-chat { display: flex; flex-direction: column; height: 100%; padding: 8px; }
+.cos-chat-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+.cos-chat-title { font-weight: 700; }
+
+.cos-chat-ctx { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 6px; }
+.cos-chip-btn { font-size: 0.78em; padding: 2px 8px; border-radius: 10px; cursor: pointer; }
+.cos-chip {
+  font-size: 0.78em; padding: 2px 8px; border-radius: 10px; cursor: pointer;
+  background: var(--interactive-accent); color: var(--text-on-accent);
+}
+.cos-chip:hover { opacity: 0.8; }
+
+.cos-chat-msgs { flex: 1; overflow-y: auto; padding: 4px 2px; }
+.cos-msg { margin: 8px 0; padding: 8px 10px; border-radius: 10px; }
+.cos-msg-user { background: var(--background-secondary); border: 1px solid var(--background-modifier-border); }
+.cos-msg-assistant { background: var(--background-primary-alt); border: 1px solid var(--background-modifier-border); }
+.cos-msg-role { font-size: 0.72em; font-weight: 700; color: var(--text-muted); margin-bottom: 3px; }
+.cos-msg-body { white-space: pre-wrap; word-break: break-word; font-size: 0.92em; line-height: 1.55; }
+.cos-msg-tools { display: flex; gap: 10px; margin-top: 6px; font-size: 0.8em; }
+
+.cos-chat-input { display: flex; gap: 6px; align-items: flex-end; margin-top: 6px; }
+.cos-chat-input textarea { flex: 1; resize: vertical; }
+.cos-chat-send { padding: 8px 14px; border-radius: 8px; cursor: pointer; flex-shrink: 0; }
+
+/* ---- 移动端适配 ---- */
+.is-mobile .cos-dash { padding: 6px; }
+.is-mobile .cos-action { flex: 1 1 45%; font-size: 0.95em; padding: 9px 6px; }
+.is-mobile .cos-set-tabs { flex-wrap: wrap; gap: 10px 18px; }
+.is-mobile .cos-set-links { flex-wrap: wrap; gap: 12px; }
+.is-mobile .cos-kind-row { flex-wrap: wrap; }
+.is-mobile .cos-kind { flex: 1 1 45%; }
+@media (max-width: 480px) {
+  .cos-actions { gap: 5px; }
+  .cos-action { flex: 1 1 45%; }
+  .cos-section { padding: 7px 8px; }
+}
+
+.cos-modal .cos-input { width: 100%; margin: 8px 0 4px; }
+.cos-modal textarea.cos-input { resize: vertical; }
+.cos-hint { font-size: 0.8em; color: var(--text-muted); margin-bottom: 8px; }
+.cos-submit { width: 100%; margin-top: 4px; }
+.cos-kind-row { display: flex; gap: 6px; margin: 8px 0; }
+.cos-kind { flex: 1; cursor: pointer; }
+.cos-wrap { flex-wrap: wrap; }
+.cos-wrap .cos-kind { flex: 1 1 30%; }
+
+/* ---- 内容流水线 ---- */
+.cos-pipe-title { font-weight: 700; font-size: 1.02em; }
+.cos-stages { display: flex; flex-wrap: wrap; gap: 4px; margin: 6px 0; }
+.cos-stage {
+  font-size: 0.7em; padding: 1px 7px; border-radius: 9px;
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-muted); white-space: nowrap;
+}
+.cos-stage-done {
+  background: var(--interactive-accent); color: var(--text-on-accent);
+  border-color: transparent;
+}
+.cos-stage-cur {
+  border-color: var(--interactive-accent); color: var(--interactive-accent);
+  font-weight: 700;
+}
+
+/* ---- v1.5 阶段摘要 ---- */
+.cos-summary { margin: 8px 0 12px; padding-left: 1.2em; }
+.cos-summary li { margin: 4px 0; line-height: 1.5; }
+
+/* ============ v2.1 设计升级层（覆盖式，深浅主题自适应） ============ */
+
+/* 全局：呼吸感与过渡 */
+.cos-dash { padding: 10px 12px; }
+.cos-title { font-size: 1.02em; letter-spacing: 0.02em; margin-bottom: 12px; }
+.cos-section {
+  border-radius: 14px; padding: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+.cos-section-title {
+  font-size: 0.72em; font-weight: 700;
+  letter-spacing: 0.08em; margin-bottom: 8px;
+}
+.cos-item { padding: 4px 6px; border-radius: 7px; transition: background 0.12s ease; }
+button.cos-action, button.cos-kind, button.cos-cal-nav, .cos-chip-btn {
+  transition: all 0.15s ease; cursor: pointer;
+}
+
+/* 启动器：按钮升级为磁贴网格 */
+.cos-actions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; margin-bottom: 12px; }
+.cos-action {
+  padding: 10px 4px; border-radius: 12px;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-secondary);
+  font-size: 0.85em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.cos-action:hover {
+  transform: translateY(-1px);
+  border-color: var(--interactive-accent);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+.cos-action:active { transform: translateY(0); }
+
+/* 指标卡：大数字 + 小标签，异常整卡泛红 */
+.cos-metric-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 7px; }
+.cos-metric {
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 10px; padding: 8px 10px;
+  transition: border-color 0.15s ease;
+}
+.cos-metric-value { font-size: 1.12em; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.3; }
+.cos-metric-label { font-size: 0.72em; color: var(--text-muted); margin-top: 2px; }
+.cos-metric-warn {
+  border-color: color-mix(in srgb, var(--text-error) 50%, transparent);
+  background: color-mix(in srgb, var(--text-error) 7%, var(--background-primary));
+}
+.cos-metric-warn .cos-metric-value { color: var(--text-error); }
+
+/* 流水线：chips 升级为带连接线的步进条 */
+.cos-stages { gap: 0; align-items: center; row-gap: 6px; }
+.cos-stage { position: relative; border-radius: 999px; padding: 2.5px 10px; margin-right: 16px; transition: all 0.2s ease; }
+.cos-stage:not(:last-child)::after {
+  content: ''; position: absolute; right: -13px; top: 50%;
+  width: 10px; height: 1.5px; background: var(--background-modifier-border);
+}
+.cos-stage-done::after { background: var(--interactive-accent); }
+.cos-stage-cur { box-shadow: 0 0 0 3px color-mix(in srgb, var(--interactive-accent) 18%, transparent); }
+
+/* 状态药丸（语义色，深浅主题通用） */
+.cos-pill { font-size: 0.72em; font-weight: 600; padding: 1.5px 9px; border-radius: 999px; }
+.cos-pill[data-st="草稿"] { background: var(--background-modifier-border); color: var(--text-muted); }
+.cos-pill[data-st="待发"] { background: rgba(224, 166, 49, 0.18); color: #c07d10; }
+.cos-pill[data-st="已发"] { background: rgba(64, 170, 96, 0.16); color: #2f9e5b; }
+.cos-pill[data-st="搁置"] { background: transparent; border: 1px dashed var(--background-modifier-border); color: var(--text-faint); }
+.cos-count { font-size: 0.72em; color: var(--text-faint); margin-left: 6px; font-variant-numeric: tabular-nums; }
+
+/* 系列进度条 */
+.cos-bar { height: 4px; border-radius: 999px; background: var(--background-modifier-border); overflow: hidden; margin: 3px 2px 9px; }
+.cos-bar-fill { height: 100%; border-radius: 999px; background: var(--interactive-accent); transition: width 0.3s ease; }
+.cos-bar-warn { background: var(--text-error); }
+
+/* 对话：气泡左右分明，发送键实心 */
+.cos-msg { max-width: 92%; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); }
+.cos-msg-user {
+  margin-left: auto;
+  background: color-mix(in srgb, var(--interactive-accent) 9%, var(--background-primary));
+  border-color: color-mix(in srgb, var(--interactive-accent) 28%, transparent);
+}
+.cos-msg-user .cos-msg-role { text-align: right; }
+.cos-msg-assistant { margin-right: auto; }
+.cos-chat-send { background: var(--interactive-accent); color: var(--text-on-accent); border: none; font-weight: 600; }
+.cos-chat-send:hover { opacity: 0.88; }
+
+/* 日历：今天实心高亮，标记更醒目 */
+.cos-cal-cell { transition: all 0.12s ease; }
+.cos-cal-cell:hover { transform: translateY(-1px); box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); }
+.cos-cal-today { background: color-mix(in srgb, var(--interactive-accent) 12%, var(--background-secondary)); }
+.cos-cal-today .cos-cal-day { color: var(--interactive-accent); font-weight: 800; }
+
+/* 移动端网格降列 */
+.is-mobile .cos-actions { grid-template-columns: repeat(2, 1fr); }
+.is-mobile .cos-metric-grid { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 380px) {
+  .cos-actions { grid-template-columns: repeat(2, 1fr); }
+  .cos-metric-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ============ v2.1.1 移动端触控修正 ============ */
+
+/* 触控目标放大到手指友好尺寸（44px 原则） */
+.is-mobile .cos-next { padding: 8px 10px; font-size: 1.1em; }
+.is-mobile .cos-tools { gap: 10px; }
+.is-mobile .cos-item { padding: 9px 8px; }
+.is-mobile .cos-item a { line-height: 1.6; }
+.is-mobile .cos-chip, .is-mobile .cos-chip-btn { padding: 7px 12px; font-size: 0.85em; }
+.is-mobile button.cos-kind, .is-mobile button.cos-action, .is-mobile .cos-submit { min-height: 42px; }
+.is-mobile .cos-cal-cell { min-height: 48px; }
+.is-mobile .cos-check-row { padding: 9px 4px; }
+.is-mobile .cos-check-row input { transform: scale(1.25); margin-top: 4px; }
+
+/* iOS 防聚焦自动缩放：输入框字号必须 ≥16px */
+.is-mobile input.cos-input,
+.is-mobile textarea.cos-input,
+.is-mobile .cos-chat-input textarea { font-size: 16px; }
+
+/* 悬停信息触屏可达：雷达评分明细直接显示，不再依赖 tooltip */
+.is-mobile .cos-stage { margin-bottom: 5px; }
+
+/* 对话输入区避让键盘（Obsidian 移动端会缩视口，留安全边距） */
+.is-mobile .cos-chat-input { padding-bottom: env(safe-area-inset-bottom, 0); }
+.is-mobile .cos-msg { max-width: 96%; }
+.cos-radar-main { display: flex; flex-direction: column; min-width: 0; flex: 1; }
+.cos-radar-detail { font-size: 0.72em; display: none; }
+.is-mobile .cos-radar-detail { display: block; }
+
+/* ---- v2.2 折叠区块 ---- */
+.cos-toggle { cursor: pointer; user-select: none; }
+.cos-toggle:hover { color: var(--interactive-accent); }
+
+/* ============ v2.6 Flomo 式灵感流 ============ */
+.cos-flomo { padding: 12px 14px; max-width: 720px; margin: 0 auto; }
+
+/* 输入卡 */
+.cos-fl-composer {
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 14px; padding: 12px 14px; margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.cos-fl-input {
+  width: 100%; border: none; background: transparent; resize: none;
+  font-size: 16px; line-height: 1.6; outline: none; min-height: 28px;
+  color: var(--text-normal); font-family: inherit;
+}
+.cos-fl-bar { display: flex; align-items: center; justify-content: space-between; margin-top: 8px; }
+.cos-fl-send {
+  background: var(--interactive-accent); color: var(--text-on-accent);
+  border: none; border-radius: 8px; padding: 6px 18px; font-weight: 600; cursor: pointer;
+}
+.cos-fl-send:hover { opacity: 0.9; }
+
+/* 时间流 */
+.cos-fl-count, .cos-fl-empty { font-size: 0.8em; margin-bottom: 10px; }
+.cos-fl-empty { text-align: center; padding: 40px 0; }
+.cos-fl-card {
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 12px; padding: 12px 14px; margin-bottom: 10px;
+  cursor: pointer; transition: all 0.12s ease;
+}
+.cos-fl-card:hover { border-color: var(--interactive-accent); box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.cos-fl-card:active { transform: scale(0.995); }
+.cos-fl-text { font-size: 15px; line-height: 1.65; color: var(--text-normal); white-space: pre-wrap; word-break: break-word; }
+.cos-fl-meta { display: flex; gap: 10px; align-items: center; margin-top: 8px; font-size: 0.72em; color: var(--text-faint); font-variant-numeric: tabular-nums; }
+.cos-fl-tag {
+  background: color-mix(in srgb, var(--interactive-accent) 12%, transparent);
+  color: var(--interactive-accent); padding: 1px 8px; border-radius: 999px; font-weight: 500;
+}
+.cos-fl-more {
+  width: 100%; padding: 10px; margin-top: 6px; cursor: pointer;
+  background: var(--background-secondary); border: 1px solid var(--background-modifier-border);
+  border-radius: 10px; color: var(--text-muted);
+}
+.cos-fl-more:hover { color: var(--interactive-accent); }
+.cos-danger { color: var(--text-error); }
+
+/* 手机端：更大触控、更贴边 */
+.is-mobile .cos-flomo { padding: 8px 10px; }
+.is-mobile .cos-fl-card { padding: 14px; }
+.is-mobile .cos-fl-input { font-size: 16px; }
+.is-mobile .cos-fl-send { padding: 9px 22px; }
+.is-mobile .cos-flomo { max-width: none; }
+
+
+/* ═══════════ v4.2 对话面板 Claude 风重塑（scoped 覆盖，老规则自动失效）═══════════ */
+.cos-chat { padding: 10px 14px; }
+.cos-chat-head { margin-bottom: 2px; }
+.cos-chat-title { font-size: 11px; font-weight: 600; color: var(--text-faint); letter-spacing: 0.5px; text-transform: uppercase; }
+.cos-chat-empty { height: 88%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; }
+.cos-chat-hi { font-family: Georgia, 'Songti SC', 'Noto Serif SC', serif; font-size: 1.75em; color: var(--text-normal); opacity: 0.9; text-align: center; line-height: 1.3; }
+.cos-chat-sub { font-size: 12px; color: var(--text-faint); }
+.cos-chat .cos-msg { max-width: 100%; box-shadow: none; border: none; background: transparent; padding: 0; margin: 16px 0; }
+.cos-chat .cos-msg-user { margin-left: 0; }
+.cos-chat .cos-msg-user .cos-msg-body {
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 10px;
+  padding: 8px 12px;
+  margin: 0 10% 0 0; /* 左对齐，右侧留白与 AI 回答区分 */
+  font-size: 0.92em;
+  display: inline-block;
+  max-width: 90%;
+}
+.cos-chat .cos-msg-assistant .cos-msg-body { padding: 0 2px; line-height: 1.7; font-size: 0.94em; }
+.cos-chat .cos-msg-tools { opacity: 0; transition: opacity 0.15s; margin-top: 6px; color: var(--text-muted); }
+.cos-chat .cos-msg:hover .cos-msg-tools { opacity: 1; }
+.cos-typing { color: var(--text-faint); font-size: 12px; letter-spacing: 3px; margin: 12px 2px; animation: cos-pulse 1.3s ease-in-out infinite; }
+@keyframes cos-pulse { 0%, 100% { opacity: 0.25; } 50% { opacity: 0.9; } }
+.cos-chat-inputcard {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 16px;
+  padding: 10px 12px 8px;
+  margin-top: 8px;
+  background: var(--background-primary);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.15s;
+}
+.cos-chat-inputcard:focus-within { border-color: color-mix(in srgb, var(--interactive-accent) 55%, transparent); }
+.cos-chat-ta {
+  width: 100%; border: none !important; background: transparent !important;
+  resize: none; box-shadow: none !important; outline: none !important;
+  font-size: 14px; line-height: 1.55; padding: 2px; font-family: inherit;
+}
+.cos-chat-foot { display: flex; justify-content: space-between; align-items: center; margin-top: 6px; }
+.cos-chat-model { font-size: 11px; color: var(--text-faint); }
+.cos-chat-send2 {
+  width: 30px; height: 30px; border-radius: 50%; border: none;
+  background: var(--interactive-accent); color: var(--text-on-accent);
+  font-size: 15px; font-weight: 700; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+}
+.cos-chat-send2:hover { opacity: 0.85; }
+.cos-chat .cos-chip-btn { font-size: 11px; opacity: 0.75; }
+.is-mobile .cos-chat-ta { font-size: 16px; }
+.is-mobile .cos-chat-inputcard { margin-bottom: env(safe-area-inset-bottom, 0); }
+
+
+/* v4.4 对话 Markdown 渲染态 */
+.cos-chat .cos-msg-assistant .cos-msg-body.markdown-rendered { white-space: normal; line-height: 1.65; }
+.cos-chat .cos-msg-body.markdown-rendered p { margin: 0 0 10px; }
+.cos-chat .cos-msg-body.markdown-rendered h1,
+.cos-chat .cos-msg-body.markdown-rendered h2,
+.cos-chat .cos-msg-body.markdown-rendered h3 { margin: 14px 0 6px; font-size: 1.06em; }
+.cos-chat .cos-msg-body.markdown-rendered table { font-size: 0.88em; margin: 8px 0; }
+.cos-chat .cos-msg-body.markdown-rendered pre { font-size: 0.85em; padding: 8px 10px; }
+.cos-chat .cos-msg-body.markdown-rendered hr { margin: 12px 0; }
+.cos-chat .cos-msg-body.markdown-rendered ul,
+.cos-chat .cos-msg-body.markdown-rendered ol { margin: 4px 0 10px; padding-left: 1.4em; }
